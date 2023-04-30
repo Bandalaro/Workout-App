@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Fitness Workout Timer App</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+  <nav>
+    <div class="logo"><i class="fas fa-dumbbell"></i><span>Morning Mentor</span></div>
+    <ul>
+      <a href="C:\Users\Rahul\Desktop\mini_project\html css\Morning Mentor\Gym page\index.html" class="active"><li>Home</li></a>
+      <a href="#"><li>Workouts</li></a>
+      <a href="C:\Users\Rahul\Desktop\mini_project\html css\Morning Mentor\workout_timer\cobra_pose\dist\index.html"><li>Next</li></a>
+      <a href="C:\Users\Rahul\Desktop\mini_project\html css\Morning Mentor\workout_timer\bent_down_touches\dist\index.html"><li>Previous</li></a>
+      <a href="C:\Users\Rahul\Desktop\mini_project\html css\Morning Mentor\about us\index.html"><li>About Us</li></a>
+    </ul>
+  </nav>
+  <div class="workout">
+    <img src="C:\Users\Rahul\Desktop\mini_project\html css\Morning Mentor\workout\exercise_gifs\cat_cow.gif" alt="" width="350">
+  </div>
+<!-- partial:index.partial.html -->
+<div class="container">
+	<form action="" id="set">
+	  <div class="section">
+	  	<div class="center">
+		  	<label>Work Time </label>
+		  	<div class="input"><button onclick="changeQty('rest','minus'); return false;">-</button><input type="text" id="rest" value="5" readonly><button onclick="changeQty('rest','plus'); return false;">+</button></div>
+		  </div>
+		</div>
+	  <div class="section">
+	  	<div class="center">
+	  		<label>Rest </label>
+	  		<div class="input"><button onclick="changeQty('workout','minus'); return false;">-</button><input type="text" id="workout" value="5" readonly><button onclick="changeQty('workout','plus'); return false;">+</button></div>
+	  	</div>
+	  </div>
+	  <div class="section">
+	  	<div class="center">
+	  		<label>Rounds </label>
+	  		<div class="input"><button onclick="changeQty('intervals','minus'); return false;">-</button><input type="text" id="intervals" value="2" readonly><button onclick="changeQty('intervals','plus'); return false;">+</button></div>
+	  	</div>
+	  </div>
+	  <div class="buttons"><button id="start">start</button></div>
+	</form>
+
+	<div id="run">
+		<div class="chart" id="graph" data-percent="1" data-line="5" data-color="#34495e"></div>
+		<div id="title"></div>
+		<div id="timer"></div>
+		<div id="buttons">
+			<button id="stop">Stop</button>
+		</div>
+	</div>
+</div>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
